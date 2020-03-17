@@ -8,7 +8,7 @@ const cloneDeepError =
   "t.cloneDeep() is deprecated. Use t.cloneNode() instead.";
 
 const ruleTester = new RuleTester({
-  parserOptions: { sourceType: "module" },
+  parserOptions: { sourceType: "module", ecmaVersion: 2015 },
 });
 
 ruleTester.run("no-deprecated-clone", rule, {

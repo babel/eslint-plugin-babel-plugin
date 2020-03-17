@@ -7,7 +7,7 @@ const error =
   "Use path.scope.buildUndefinedNode() to create an undefined identifier directly.";
 
 const ruleTester = new RuleTester({
-  parserOptions: { sourceType: "module" },
+  parserOptions: { sourceType: "module", ecmaVersion: 2015 },
 });
 
 ruleTester.run("no-undefined-identifier", rule, {
